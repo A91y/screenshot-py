@@ -13,7 +13,7 @@ def takeScreenshot():
     img = ImageGrab.grab()
     img.save(fp=f"IMG-{dy}{mnt}{yr}{hr}{mn}{sc}.png" , format="png")
     
-path_cwd = os.getcwd()
+path_cwd = os.path.dirname(os.path.realpath(__file__))
 
 if __name__ == "__main__":
 
